@@ -29,7 +29,7 @@ python cv_pose.py
 ```
 
 ## Model Quantization
-If there are many people who want to know about the nxruntime model simulation, I will provide the quantization code
+‌If many users want to know about model quantization methods, I will provide the code.‌
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
