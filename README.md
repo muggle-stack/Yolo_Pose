@@ -1,4 +1,13 @@
 # Yolo_Pose
-使用 ONNX runtime 推理引擎进行实时视频行人检测和姿态检测，Ultralytics 官方库也有封装好API。但是 Ultralytics 官方库无法无法进行模型量化。
+## Overview
+Yolo_Pose is a project that leverages the ONNX runtime inference engine for real-time pedestrian detection and pose estimation in videos. While Ultralytics provides well-encapsulated APIs, it lacks support for model quantization, which is crucial for optimizing performance on edge devices. This repository aims to fill that gap by offering additional utilities and scripts tailored for quantization and deployment.
 
-## 用法
+## Installation
+To get started with Yolo_Pose, follow these steps:
+
+## Clone the repository:
+git clone https://github.com/muggle-stack/Yolo_Pose.git
+cd Yolo_Pose
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
