@@ -43,7 +43,7 @@ def postprocess(output_boxs, keypoints, original_image, input_size, original_dat
             cur_kps[:, 1] *= scale_h
             kpts_list.append(cur_kps)
 
-            indices = nms(boxes, confidences)
+    indices = nms(boxes, confidences)
 
     skeleton = [
         (0, 1), (1, 3), (0, 2), (2, 4),  
