@@ -106,6 +106,8 @@ if __name__ == '__main__':
             
             input_tensor, original_data = preprocess_image(frame)
             outputs = session.run([output_name], {input_name: input_tensor})
+            # for i, out in enumerate(outputs):
+            #     print(f"outputs[{i}] shape:", out.shape)
             output_rs = outputs[0][0].T
 
             boxs = output_rs[:, 0:5]

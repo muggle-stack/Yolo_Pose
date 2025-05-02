@@ -15,9 +15,19 @@ git clone https://github.com/muggle-stack/Yolo_Pose.git
 cd Yolo_Pose
 pip install -r requirements.txt
 ```
-### Download yolo11 pose models(if you use the ubuntu, please download this model with wget):
+### The model is already in the warehouse, just run it
+If you need to convert the model manually, please download the ultralytics library
 ```
 wget https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n-pose.pt
+pip install ultralytics
+```
+Run the following code
+```
+from ultralytics import YOLO
+
+model = YOLO("yolo11n-pose.pt")
+
+model.export(format="onnx", opset=11)
 ```
 If you use windows, click this link to download model, and then move it to the project path.
 
